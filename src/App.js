@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from "./profile/Profile"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile 
+      fullName={"BENDAHGANE Imene"} 
+      bio={"yong passionate programmer, born in 1998. had master degree in artificial intelligence. relised many project in both web and artificial intelligence"} 
+      profession="web developper , data scientist"
+      >
+        <img src="/images/profilePic1.png" alt="profile pic" />
+      </Profile>
+      
     </div>
   );
 }
